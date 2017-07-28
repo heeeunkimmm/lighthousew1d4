@@ -10,17 +10,14 @@ students.sort(function(a, b) {
   // var nameB = b.name;
   if (a.name < b.name) {
     return -1;
-  }
-  else if (a.name > b.name) {
+  } else if (a.name > b.name) {
     return 1;
+  } else {
+    return b.age - a.age;
   }
-  else {
-      // console.log(nameB, nameA)
-      return b.age - a.age;
-    }
   // console.log(a, b)
 });
 
-console.log(students)
+console.log(students);
 
 
